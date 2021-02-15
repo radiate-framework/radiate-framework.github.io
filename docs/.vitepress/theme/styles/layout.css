@@ -20,26 +20,25 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: var(--c-text);
-  background-color: var(--c-bg);
+  background: linear-gradient(
+    270deg,
+    var(--c-brand-yellow) var(--page-accent, 1rem),
+    var(--c-bg) var(--page-accent, 1rem)
+  );
   direction: ltr;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media (min-width: 1280px) {
+  body {
+    --page-accent: 5rem;
+  }
+}
 
 main {
   display: block;
-  background: linear-gradient(
-    270deg,
-    var(--c-brand-yellow) var(--page-accent, 1rem),
-    transparent var(--page-accent, 1rem)
-  );
-}
-@media (min-width: 1280px) {
-  main {
-    --page-accent: 5rem;
-  }
 }
 h1,
 h2,
