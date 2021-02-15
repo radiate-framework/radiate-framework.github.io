@@ -17,24 +17,15 @@ body {
   min-height: 100vh;
   line-height: 1.4;
   font-family: var(--font-family-base);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--c-text);
-  background: linear-gradient(
-    270deg,
-    var(--c-brand-yellow) var(--page-accent, 1rem),
-    var(--c-bg) var(--page-accent, 1rem)
-  );
+  background: var(--c-bg);
   direction: ltr;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-@media (min-width: 1280px) {
-  body {
-    --page-accent: 5rem;
-  }
 }
 
 main {
@@ -62,17 +53,17 @@ b {
 }
 
 h1:hover .header-anchor,
-h1:focus .header-anchor,
+h1 .header-anchor:focus,
 h2:hover .header-anchor,
-h2:focus .header-anchor,
+h2 .header-anchor:focus,
 h3:hover .header-anchor,
-h3:focus .header-anchor,
+h3 .header-anchor:focus,
 h4:hover .header-anchor,
-h4:focus .header-anchor,
+h4 .header-anchor:focus,
 h5:hover .header-anchor,
-h5:focus .header-anchor,
+h5 .header-anchor:focus,
 h6:hover .header-anchor,
-h6:focus .header-anchor {
+h6 .header-anchor :focus {
   opacity: 1;
 }
 

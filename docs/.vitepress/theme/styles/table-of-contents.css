@@ -1,0 +1,11 @@
+.table-of-contents ::marker {
+  content: "# ";
+  color: var(--c-brand);
+}
+.table-of-contents a {
+  color: var(--c-text);
+}
+.table-of-contents a:hover {
+  text-decoration: none;
+  color: var(--c-brand);
+}

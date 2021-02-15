@@ -3,6 +3,7 @@ import "./styles/layout.css";
 import "./styles/code.css";
 import "./styles/custom-blocks.css";
 import "./styles/sidebar-links.css";
+import "./styles/table-of-contents.css";
 
 import Layout from "vitepress/dist/client/theme-default/Layout.vue";
 
