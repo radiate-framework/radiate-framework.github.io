@@ -104,6 +104,4 @@ Route::prefix('admin')->group(function () {
 });
 ```
 
-::: warning
-AJAX routes will ignore any prefixes given to the router group.
-:::
+<AppNotice type="warning">AJAX routes will ignore any prefixes given to the router group.</AppNotice>
