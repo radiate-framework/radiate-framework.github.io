@@ -24,6 +24,7 @@
     display: flex;
     gap: 1rem;
     margin-block: 1.5rem;
+    box-shadow: var(--shadow-1);
   }
   .notice-icon {
     color: rgb(var(--notice-color));

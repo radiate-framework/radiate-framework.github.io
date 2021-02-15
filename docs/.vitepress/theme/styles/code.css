@@ -6,6 +6,8 @@ code {
   font-size: 0.875em;
   color: var(--c-brand);
   background-color: var(--code-inline-bg-color);
+}
+*:not(pre) > code {
   box-shadow: var(--shadow-1);
 }
 
@@ -22,6 +24,7 @@ div[class*="language-"] {
   margin: 1rem -1.5rem;
   background-color: var(--code-bg-color);
   overflow-x: auto;
+  box-shadow: var(--shadow-2);
 }
 
 li > div[class*="language-"] {

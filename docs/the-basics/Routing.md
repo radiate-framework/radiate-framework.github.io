@@ -2,6 +2,8 @@
 
 [[toc]]
 
+## Basic routing
+
 The Router is a powerful wrapper around the WordPress `register_rest_route` function enabling you to use groups, middleware, and controllers.
 
 The most basic route accepts a URI and a closure, providing a very simple and expressive method of defining routes and behavior without complicated routing configuration files:
