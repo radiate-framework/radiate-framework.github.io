@@ -21,9 +21,10 @@ jobs:
       run: |
         cd docs
         ls -a
+        cd .vuepress
+        ls -a
         cd dist
         ls -a
-        cd docs/.vuepress/dist
         git init
         git add -A
         git config --local user.email "action@github.com"
