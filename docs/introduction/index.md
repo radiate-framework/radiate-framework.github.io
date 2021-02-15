@@ -1,4 +1,4 @@
-# Getting started
+# Introduction
 
 Radiate is a WordPress theme and plugin framework designed for super fast project scaffolding so you can get up and running as soon as possible.
 
