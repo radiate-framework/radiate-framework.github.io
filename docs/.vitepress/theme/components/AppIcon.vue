@@ -1,6 +1,10 @@
 <template functional>
   <span>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      class="material-icon"
+    >
       <path :d="iconPath" />
     </svg>
   </span>
@@ -35,7 +39,7 @@
 </script>
 
 <style>
-  .icon {
+  .material-icon {
     width: 1.5rem;
     height: 1.5rem;
     display: inline-block;

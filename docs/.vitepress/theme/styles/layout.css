@@ -30,8 +30,17 @@ body {
 
 main {
   display: block;
+  background: linear-gradient(
+    270deg,
+    var(--c-brand-yellow) var(--page-accent, 1rem),
+    transparent var(--page-accent, 1rem)
+  );
 }
-
+@media (min-width: 1280px) {
+  main {
+    --page-accent: 5rem;
+  }
+}
 h1,
 h2,
 h3,
@@ -233,4 +242,8 @@ form {
   display: none;
   width: 100vw;
   height: 100vh;
+}
+
+img.logo[alt] {
+  height: 1.875rem;
 }

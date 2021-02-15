@@ -4,7 +4,15 @@ module.exports = {
   base: "/radiate-docs/",
   lang: "en-GB",
   themeConfig: {
-    nav: [{ text: "Home", link: "/" }],
+    logo: "./favicon-48.png",
+    nav: [
+      { text: "Home", link: "/" },
+      { text: "Theme", link: "https://github.com/BenRutlandWeb/radiate-theme" },
+      {
+        text: "Plugin",
+        link: "https://github.com/BenRutlandWeb/radiate-plugin",
+      },
+    ],
     sidebar: [
       {
         text: "Introduction",
