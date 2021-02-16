@@ -79,8 +79,8 @@ h1 {
 }
 
 h2 {
-  margin-top: 2.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--c-divider);
   padding-bottom: 0.3rem;
   line-height: 1.25;
@@ -93,7 +93,7 @@ h2 + h3 {
 }
 
 h3 {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   font-size: 1.35rem;
 }
 
@@ -236,4 +236,10 @@ form {
 
 img.logo[alt] {
   height: 1.875rem;
+  margin: 0;
+}
+.nav-bar-title {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }

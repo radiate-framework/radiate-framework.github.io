@@ -7,10 +7,10 @@ module.exports = {
     logo: "./favicon-48.png",
     nav: [
       { text: "Home", link: "/" },
-      { text: "Theme", link: "https://github.com/BenRutlandWeb/radiate-theme" },
+      //{ text: "Quick Start", link: "quick-start" },
       {
-        text: "Plugin",
-        link: "https://github.com/BenRutlandWeb/radiate-plugin",
+        text: "GitHub",
+        link: "https://github.com/BenRutlandWeb/radiate-framework",
       },
     ],
     sidebar: [
@@ -24,7 +24,7 @@ module.exports = {
         ],
       },
       {
-        text: "Getting started",
+        text: "Getting Started",
         link: "getting-started/",
         children: [
           { text: "Installation", link: "getting-started/installation" },
@@ -37,9 +37,15 @@ module.exports = {
         ],
       },
       {
-        text: "The basics",
+        text: "The Basics",
         link: "the-basics/",
-        children: [{ text: "Routing", link: "the-basics/routing" }],
+        children: [
+          { text: "Authentication", link: "the-basics/authentication" },
+          { text: "Controllers", link: "the-basics/controllers" },
+          { text: "Events", link: "the-basics/events" },
+          { text: "Middleware", link: "the-basics/middleware" },
+          { text: "Routing", link: "the-basics/routing" },
+        ],
       },
     ],
   },

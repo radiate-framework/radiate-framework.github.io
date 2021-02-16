@@ -2,7 +2,7 @@
 
 [[toc]]
 
-## Basic routing
+## Basic Routing
 
 The Router is a powerful wrapper around the WordPress `register_rest_route` function enabling you to use groups, middleware, and controllers.
 
@@ -30,7 +30,7 @@ Route::ajax('greeting', function () {
 // https://example.com/wp-admin/admin-ajax.php?action=greeting
 ```
 
-## The default route files
+## The Default Route Files
 
 All routes are defined in your route files, which are located in the routes directory. These files are automatically loaded by your application's `App\Providers\RouteServiceProvider`. The `routes/ajax.php` file defines AJAX routes. These routes are assigned the `ajax` middleware group, which provides features like CSRF protection. The routes in `routes/api.php `are stateless and are assigned the `api` middleware group.
 
@@ -44,7 +44,7 @@ Route::get('/user', [UserController::class, 'index']);
 
 The WordPress REST API requires a namespace for each route. Routes defined in the `routes/api.php` file are nested within a route group by the `RouteServiceProvider`. Within this group, the `api` namespace is automatically applied so you do not need to manually apply it to every route in the file. You may modify the prefix and other route group options by modifying your `RouteServiceProvider` class.
 
-## Available router methods
+## Available Router Methods
 
 The router allows you to register REST routes that respond to any HTTP verb:
 
@@ -72,7 +72,7 @@ Route::any('/', function () {
 });
 ```
 
-## Route groups
+## Route Groups
 
 Route groups allow you to share attributes, such as middleware, across a large number of routes without needing to define those attributes on each individual route.
 
@@ -94,7 +94,7 @@ Route::middleware(['first', 'second'])->group(function () {
 });
 ```
 
-### Route prefixes
+### Route Prefixes
 
 The prefix method may be used to prefix each route in the group with a given URI. For example, you may want to prefix all route URIs within the group with admin:
 

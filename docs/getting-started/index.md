@@ -1,3 +1,1 @@
-# Getting started
-
-[[toc]]
+# Getting Started

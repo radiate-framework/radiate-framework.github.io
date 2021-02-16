@@ -1,7 +1,7 @@
 <template>
   <div class="notice" :class="type">
     <AppIcon :type="type" class="notice-icon" />
-    <div><slot /></div>
+    <div class="content"><slot /></div>
   </div>
 </template>
 
@@ -23,8 +23,15 @@
     background: rgb(var(--notice-color) / 12%);
     display: flex;
     gap: 1rem;
-    margin-block: 1.5rem;
+    margin-block: 2.5rem;
     box-shadow: var(--shadow-1);
+  }
+  .notice .content {
+    display: grid;
+    gap: 1rem;
+  }
+  .notice .content > * {
+    margin-block: 0;
   }
   .notice-icon {
     color: rgb(var(--notice-color));

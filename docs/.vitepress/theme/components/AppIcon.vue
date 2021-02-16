@@ -44,5 +44,6 @@
     height: 1.5rem;
     display: inline-block;
     fill: currentColor;
+    vertical-align: bottom;
   }
 </style>
