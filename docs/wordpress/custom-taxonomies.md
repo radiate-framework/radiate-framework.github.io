@@ -109,7 +109,7 @@ Labels are intelligently merged with Radiate's defaults so you can define as man
 
 ### Registering Taxonomies
 
-The register a taxonomy, they must be associated with a post type. To do this, you can add your `Taxonomy` classname to the `$taxonomies` array in your `Cpt` class.
+To register a taxonomy, they must be associated with a post type. To do this, you can add your `Taxonomy` classname to the `$taxonomies` array in your `Cpt` class.
 
 You can register as many taxonomies on a post type as you need, and you can also register the same taxonomy on multiple post types!
 
