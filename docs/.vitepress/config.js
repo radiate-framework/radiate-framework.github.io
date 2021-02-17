@@ -6,7 +6,7 @@ module.exports = {
   themeConfig: {
     logo: "./favicon-48.png",
     nav: [
-      { text: "Home", link: "/" },
+      //{ text: "Home", link: "/" },
       //{ text: "Quick Start", link: "quick-start" },
       {
         text: "GitHub",
@@ -39,6 +39,7 @@ module.exports = {
         text: "WordPress",
         children: [
           { text: "Custom Post Types", link: "/wordpress/custom-post-types" },
+          { text: "Custom Taxonomies", link: "/wordpress/custom-taxonomies" },
         ],
       },
       {
