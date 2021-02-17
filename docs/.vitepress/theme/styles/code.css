@@ -5,10 +5,10 @@ code {
   font-family: var(--code-font-family);
   font-size: 0.875em;
   color: var(--c-brand);
-  background-color: var(--code-inline-bg-color);
 }
 *:not(pre) > code {
   box-shadow: var(--shadow-1);
+  background-color: var(--code-inline-bg-color);
 }
 
 code .token.deleted {
