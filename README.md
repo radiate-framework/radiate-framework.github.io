@@ -4,4 +4,4 @@
 
 A WordPress theme and plugin framework
 
-[Radiate documentation](https://radiate-framework.github.io/docs/)
+[Radiate documentation](https://radiate-framework.github.io/)
