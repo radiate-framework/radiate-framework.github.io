@@ -216,6 +216,10 @@ div[class*="language-"].line-numbers-mode {
   content: "dockerfile";
 }
 
+[class~="language-php"] [class~="language-php"]:before {
+  content: "";
+}
+
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML.
  * Based on https://github.com/chriskempson/tomorrow-theme

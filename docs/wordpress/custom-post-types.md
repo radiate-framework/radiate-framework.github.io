@@ -8,10 +8,10 @@ Post types are a way to separate different forms of content. As an example, Your
 
 ## Creating A Post Type
 
-To get started, we'll use `make:cpt` to create a film post type. The `Cpt` name should be in the singular form for example **Film** not **Films**.
+To get started, we'll use `make:posttype` to create a film post type. The `PostType` name should be in the singular form for example **Film** not **Films**.
 
 ```
-wp radiate make:cpt Film
+wp radiate make:posttype Film
 ```
 
 <AppNotice type="info">
@@ -20,14 +20,16 @@ Remember to use _StudlyCase_ for your post type names. The name will be automati
 
 </AppNotice>
 
-Radiate will generate a `Film` post type in your `app/Cpts` directory.
+Radiate will generate a `Film` post type in your `app/WordPress/PostTypes` directory.
 
 ```php
-namespace Theme\Cpts;
+<?php
 
-use Radiate\WordPress\Cpt;
+namespace Theme\WordPress\PostTypes;
 
-class Film extends Cpt
+use Radiate\WordPress\PostType;
+
+class Film extends PostType
 {
     /**
      * The name
@@ -76,7 +78,7 @@ class Film extends Cpt
 
 ### Post Type Options
 
-The post type options are an array of properties for the `Cpt` for example, `has_archive` determines if the post type will have an archive page, `menu_icon` specifies the [Dashicon](https://developer.wordpress.org/resource/dashicons/#welcome-learn-more) to use.
+The post type options are an array of properties for the `PostType` for example, `has_archive` determines if the post type will have an archive page, `menu_icon` specifies the [Dashicon](https://developer.wordpress.org/resource/dashicons/#welcome-learn-more) to use.
 
 The different arguments accepted are well documented in the [WordPress documentation](https://developer.wordpress.org/reference/functions/register_post_type/)
 
@@ -84,9 +86,9 @@ The different arguments accepted are well documented in the [WordPress documenta
 
 One pain point of creating post types the standard WordPress way is the many labels that tend to require the same string-replace treatment. I.e. _Add New Film_, _Add New Book_, _Add New Event_.
 
-Radiate makes handling labels a breeze. In your `Cpt` class, the `$singular` and `$plural` names are determined for you. These labels are then inserted in the required places so you don't have to.
+Radiate makes handling labels a breeze. In your `PostType` class, the `$singular` and `$plural` names are determined for you. These labels are then inserted in the required places so you don't have to.
 
-If you do want to specify your own labels, you can add a `labels` method to the `Cpt` and return an array of your own options.
+If you do want to specify your own labels, you can add a `labels` method to the `PostType` and return an array of your own options.
 
 ```php
 /**
@@ -115,15 +117,17 @@ Labels are intelligently merged with Radiate's defaults so you can define as man
 
 ### Registering Post Types
 
-Registering your custom post types is as easy as generating them. In your `CptServiceProvider`, add the `Cpt` classname to the `$postTypes` array.
+Registering your custom post types is as easy as generating them. In your `WordPressServiceProvider`, add the `PostType` classname to the `$postTypes` array.
 
 ```php
+<?php
+
 namespace Theme\Providers;
 
-use Radiate\Foundation\Providers\CptServiceProvider as ServiceProvider;
-use Theme\Cpts\Film;
+use Radiate\Foundation\Providers\WordPressServiceProvider as ServiceProvider;
+use Theme\WordPress\PostTypes\Film;
 
-class CptServiceProvider extends ServiceProvider
+class WordPressServiceProvider extends ServiceProvider
 {
     /**
      * The custom post types to register
@@ -138,12 +142,12 @@ class CptServiceProvider extends ServiceProvider
 
 ## Reserved Post Types
 
-WordPress has some reserved post types that you shouldn't override. `make:cpt` determines if the `Cpt` you attempted to create is reserved.
+WordPress has some reserved post types that you shouldn't override. `make:posttype` determines if the `PostType` you attempted to create is reserved.
 
 ### Special Post Types
 
 Some reserved post types have been deemed "special" and may be extended with [custom taxonomies](./custom-taxonomies) in the usual way.
-When using `make:cpt` on one of these reserved post types, the `Cpt` will be generated with a slimmed down class.
+When using `make:posttype` on one of these reserved post types, the `PostType` will be generated with a slimmed down class.
 
 - post
 - page
@@ -151,7 +155,7 @@ When using `make:cpt` on one of these reserved post types, the `Cpt` will be gen
 
 ### Blocked Post Types
 
-Post types that do not require custom taxonomies cannot be generated using `make:cpt`, returning an error in the console instead.
+Post types that do not require custom taxonomies cannot be generated using `make:posttype`, returning an error in the console instead.
 
 - revision
 - nav_menu_item

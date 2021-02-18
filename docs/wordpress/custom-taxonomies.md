@@ -28,10 +28,12 @@ Remember to use _StudlyCase_ for your taxonomy names. The name will be automatic
 
 </AppNotice>
 
-Radiate will generate a `Genre` taxonomy in your `app/Cpts/Taxonomies` directory.
+Radiate will generate a `Genre` taxonomy in your `app/WordPress/Taxonomies` directory.
 
 ```php
-namespace Theme\Cpts\Taxonomies;
+<?php
+
+namespace Theme\WordPress\Taxonomies;
 
 use Radiate\WordPress\Taxonomy;
 
@@ -109,17 +111,19 @@ Labels are intelligently merged with Radiate's defaults so you can define as man
 
 ### Registering Taxonomies
 
-To register a taxonomy, they must be associated with a post type. To do this, you can add your `Taxonomy` classname to the `$taxonomies` array in your `Cpt` class.
+To register a taxonomy, they must be associated with a post type. To do this, you can add your `Taxonomy` classname to the `$taxonomies` array in your `PostType` class.
 
 You can register as many taxonomies on a post type as you need, and you can also register the same taxonomy on multiple post types!
 
 ```php
-namespace Theme\Cpts;
+<?php
 
-use Radiate\WordPress\Cpt;
-use Theme\Cpts\Taxonomies\Genre;
+namespace Theme\WordPress\PostTypes;
 
-class Film extends Cpt
+use Radiate\WordPress\PostType;
+use Theme\WordPress\Taxonomies\Genre;
+
+class Film extends PostType
 {
     /**
      * The taxonomies

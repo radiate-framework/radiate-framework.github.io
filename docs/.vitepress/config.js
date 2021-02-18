@@ -7,7 +7,15 @@ module.exports = {
     logo: "./favicon-48.png",
     nav: [
       //{ text: "Home", link: "/" },
-      //{ text: "Quick Start", link: "quick-start" },
+      { text: "Docs", link: "/docs/" },
+      //{
+      //  text: "API Reference",
+      //  link: "/api/",
+      //  items: [
+      //    { text: "Test", link: "/introduction/" },
+      //    { text: "Test 2", link: "/getting-started/" },
+      //  ],
+      //},
       {
         text: "GitHub",
         link: "https://github.com/BenRutlandWeb/radiate-framework",
@@ -40,6 +48,7 @@ module.exports = {
         children: [
           { text: "Custom Post Types", link: "/wordpress/custom-post-types" },
           { text: "Custom Taxonomies", link: "/wordpress/custom-taxonomies" },
+          { text: "Shortcodes", link: "/wordpress/shortcodes" },
         ],
       },
       {
