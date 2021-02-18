@@ -1,13 +1,13 @@
 module.exports = {
   title: "Radiate Docs",
   description: "A WordPress theme and plugin framework",
-  base: "/docs/",
+  base: "/",
   lang: "en-GB",
   themeConfig: {
     logo: "./favicon-48.png",
     nav: [
       //{ text: "Home", link: "/" },
-      { text: "Docs", link: "/docs/" },
+      { text: "Docs", link: "/" },
       //{
       //  text: "API Reference",
       //  link: "/api/",
