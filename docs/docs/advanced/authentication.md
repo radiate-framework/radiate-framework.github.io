@@ -13,6 +13,10 @@ The `Auth` facade is a wrapper around several WordPress functions to make handli
 The `Auth` facade has `check` and `guest` methods to determine the current status of the user.
 
 ```php
+<?php
+
+use Radiate\Support\Facades\Auth;
+
 // determine if the user is logged in
 Auth::check();
 
@@ -31,6 +35,8 @@ Even though it is possible to determine if a user is authenticated using the che
 You may access the authenticated user via the `user` method on the `Auth` facade. You can also get just the user ID if required.
 
 ```php
+<?php
+
 use Radiate\Support\Facades\Auth;
 
 // get the logged in WP_User instance
@@ -51,6 +57,8 @@ REST API routes are stateless so the `user` method will always return false when
 </AppNotice>
 
 ```php
+<?php
+
 namespace App\Http\Controllers;
 
 use Radiate\Http\Request;
@@ -78,6 +86,8 @@ class DoSomethingController extends Controller
 Route middleware can be used to protect routes from unauthenticated requests. Radiate comes with an `auth` middleware in the form of `Radiate\Auth\Middleware\Authenticate`. This middleware can be added to a route group to protect access from unauthenticated requests.
 
 ```php
+<?php
+
 use Radiate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
@@ -92,6 +102,10 @@ Route::middleware('auth')->group(function () {
 It is possible to manually log in a user by passing the authentication credentials to the `attempt` or `login` method on the `Auth` facade.
 
 ```php
+<?php
+
+use Radiate\Support\Facades\Auth;
+
 $credentials = [
     'username' => '@admin',
     'password' => 'P@ssw0rd',
@@ -114,5 +128,9 @@ if (Auth::login($credentials, $remember)) {
 To manually log users out of your application, you may use the `logout` method provided by the `Auth` facade.
 
 ```php
+<?php
+
+use Radiate\Support\Facades\Auth;
+
 Auth::logout();
 ```

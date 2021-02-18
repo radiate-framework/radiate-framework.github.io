@@ -88,7 +88,7 @@ Attributes declared in the `$defaultAttributes` array will be available as dynam
 
 <AppNotice type="warning">
 
-WordPress converts shortcode attributes to lower case and your `$defaultAttributes` should match exactly. We highly recommend specifying your attributes as _snake_case_.
+WordPress converts all shortcode attributes to lower case. We also recommend specifying your attributes as _snake_case_.
 
 </AppNotice>
 
