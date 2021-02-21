@@ -1,1 +1,0 @@
-import{o as t,c as e,a as d}from"./app.de3dbc13.js";const a='{"title":"API Reference","description":"","frontmatter":{},"headers":[{"level":2,"title":"Facades","slug":"facades"}],"relativePath":"api/index.md","lastUpdated":1613690719599}',r={},i=d('',5);r.render=function(d,a,r,c,o,s){return t(),e("div",null,[i])};export default r;export{a as __pageData};
