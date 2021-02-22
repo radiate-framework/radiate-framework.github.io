@@ -1,0 +1,25 @@
+{
+  "short_name": "Radiate",
+  "name": "Radiate Framework",
+  "description": "A WordPress theme and plugin framework",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "./icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#ffd460",
+  "theme_color": "#ffd460",
+  "display": "standalone",
+  "orientation": "portrait"
+}

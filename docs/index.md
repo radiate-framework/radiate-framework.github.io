@@ -6,8 +6,8 @@ heroAlt: A WordPress theme and plugin framework
 tagline: A WordPress theme and plugin framework
 actionText: Get Started →
 actionLink: /docs/
-altActionText: Dive Deeper →
-altActionLink: /api/
+#altActionText: Dive Deeper →
+#altActionLink: /api/
 features:
   - title: Install.
     details: Radiate is installable with Composer - you'll be up and running in no time.

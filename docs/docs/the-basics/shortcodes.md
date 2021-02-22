@@ -109,6 +109,27 @@ public function handle()
 }
 ```
 
+### Dependency Injection & Shortcodes
+
+The Radiate service container is used to resolve all Radiate `handle` methods on the `Shortcode` class. This means you can type hint any dependency on the `handle` method and the container will resolve it for you.
+
+For example, if your shortcode displays a login form to guests but redirects to the account page for logged in users, you might do this:
+
+```php
+<?php
+
+use Radiate\Http\Request;
+
+public function handle(Request $request)
+{
+    if ($request->user()) {
+        die(wp_redirect('/account'));
+    }
+
+    return $this->view('shortcodes.login-form');
+}
+```
+
 ## Handling The Shortcode
 
 The `handle` method of your `Shortcode` class is where you will define what happens when the shortcode is used. In most instances, the `handle` method will return a string to output to the screen.
