@@ -1,4 +1,4 @@
-# Radiate\Http\Request;
+# Radiate\Http\Request
 
 ## Implements
 

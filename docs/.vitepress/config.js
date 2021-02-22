@@ -61,7 +61,11 @@ function getApiSidebar() {
     //----------------------------------------------------------------------
     {
       text: "View",
-      children: [{ text: "View", link: "/api/view/view" }],
+      children: [
+        { text: "Factory", link: "/api/view/factory" },
+        { text: "Finder", link: "/api/view/finder" },
+        { text: "View", link: "/api/view/view" },
+      ],
     },
     //----------------------------------------------------------------------
   ];

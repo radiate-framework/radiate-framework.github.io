@@ -14,4 +14,4 @@ Radiate provides Facades to almost all of it's features for an elegant, fluid AP
 | Request   | [Radiate\Http\Request](/api/http/request)          | `request`                 |
 | Route     | Radiate\Routing\Router                             | `router`                  |
 | Validator | Radiate\Validation\Factory                         | `validator`               |
-| View      | [Radiate\View\View](/api/view/view)                | `view`                    |
+| View      | [Radiate\View\Factory](/api/view/factory)          | `view`                    |

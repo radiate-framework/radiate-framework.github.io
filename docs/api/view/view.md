@@ -2,12 +2,28 @@
 
 ## Properties
 
-### `$basePath`
+### `$view`
 
-The views base path
+The view
 
 ```php
-protected string $basePath
+protected string $view
+```
+
+### `$path`
+
+The view directory
+
+```php
+protected string $path
+```
+
+### `$data`
+
+The view data
+
+```php
+protected array $data
 ```
 
 ## Methods
@@ -17,22 +33,40 @@ protected string $basePath
 Create the view instance
 
 ```php
-public function __construct(string $basePath): void
+public function __construct(string $view, string $path, array $data = []): void
 ```
 
 #### Properties
 
-- `$basePath` The base path to resolve all views
+- `$view` The view
+- `$path` The view path
+- `$data` The data to pass to the view
 
-### `make`
+### `render`
 
-Make a view
+Get the string contents of the view.
 
 ```php
-public function make(string $path, array $args = []): string
+public function render(): string
+```
+
+### `evaluatePath`
+
+Get the evaluated contents of the view at the given path.
+
+```php
+protected function evaluatePath(string $__path, array $__data): string
 ```
 
 #### Properties
 
-- `$path` The path to the view. This can be _dot_ separated
-- `$args` An array of arguments to pass into the view
+- `$__path` The view path
+- `$__data` The data to pass to the view
+
+### `__toString`
+
+Return the view.
+
+```php
+public function __toString(): string
+```
