@@ -1,4 +1,4 @@
-![Radiate](social-preview.png)
+![Radiate](https://radiate-framework.github.io/social-preview.png)
 
 # Radiate Docs
 
