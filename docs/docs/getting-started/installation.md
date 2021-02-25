@@ -4,7 +4,7 @@ The Radiate framework can be used in either a theme or a plugin. The framework f
 
 Radiate utilizes `composer` for installation of the theme or plugin, and class autoloading.
 
-## Installing A Theme
+## Installing the Theme
 
 If you are building a theme, navigate to the themes directory of your project:
 
@@ -12,7 +12,7 @@ If you are building a theme, navigate to the themes directory of your project:
 composer create-project radiate/theme theme-name
 ```
 
-## Installing A Plugin
+## Installing the Plugin
 
 If you're building a plugin, navigate to the plugins directory and run:
 

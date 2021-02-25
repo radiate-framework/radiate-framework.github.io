@@ -55,7 +55,8 @@ function getApiSidebar() {
       text: "Support",
       children: [
         { text: "Facades", link: "/api/support/facades" },
-        { text: "Traits\\Macroable", link: "/api/support/traits/macroable" },
+        { text: "Str", link: "/api/support/str" },
+        { text: "Stringable", link: "/api/support/stringable" },
       ],
     },
     //----------------------------------------------------------------------
