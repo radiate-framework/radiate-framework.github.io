@@ -8,10 +8,10 @@ Post types are a way to separate different forms of content. As an example, Your
 
 ## Creating A Post Type
 
-To get started, we'll use `make:posttype` to create a film post type. The `PostType` name should be in the singular form for example **Film** not **Films**.
+To get started, we'll use `make:post-type` to create a film post type. The `PostType` name should be in the singular form for example **Film** not **Films**.
 
 ```
-wp radiate make:posttype Film
+wp radiate make:post-type Film
 ```
 
 <AppNotice type="info">
@@ -142,12 +142,12 @@ class WordPressServiceProvider extends ServiceProvider
 
 ## Reserved Post Types
 
-WordPress has some reserved post types that you shouldn't override. `make:posttype` determines if the `PostType` you attempted to create is reserved.
+WordPress has some reserved post types that you shouldn't override. `make:post-type` determines if the `PostType` you attempted to create is reserved.
 
 ### Special Post Types
 
 Some reserved post types have been deemed "special" and may be extended with [custom taxonomies](./custom-taxonomies) in the usual way.
-When using `make:posttype` on one of these reserved post types, the `PostType` will be generated with a slimmed down class.
+When using `make:post-type` on one of these reserved post types, the `PostType` will be generated with a slimmed down class.
 
 - post
 - page
@@ -155,7 +155,7 @@ When using `make:posttype` on one of these reserved post types, the `PostType` w
 
 ### Blocked Post Types
 
-Post types that do not require custom taxonomies cannot be generated using `make:posttype`, returning an error in the console instead.
+Post types that do not require custom taxonomies cannot be generated using `make:post-type`, returning an error in the console instead.
 
 - revision
 - nav_menu_item
