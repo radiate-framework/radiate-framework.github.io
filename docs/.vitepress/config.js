@@ -9,8 +9,8 @@ module.exports = {
     nav: getNavbar(),
     repo: "radiate-framework/framework",
     algolia: {
-      apiKey: "25626fae796133dc1e734c6bcaaeac3c",
-      indexName: "docsearch",
+      apiKey: "686c9e21a4b69d54a0306a14167c4732",
+      indexName: "radiate-framework",
     },
     sidebar: {
       "/docs/": getDocsSidebar(),

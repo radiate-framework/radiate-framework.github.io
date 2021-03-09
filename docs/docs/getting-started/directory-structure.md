@@ -74,7 +74,7 @@ The Radiate `Theme` and `Plugin` both contain a few files in the root directory,
 
 ## The App Directory In Detail
 
-The majority of your application is housed in the `app` directory. By default, this directory is namespaced under `Theme` and `Plugin` and is autoloaded by Composer using the PSR-4 autoloading standard.
+The majority of your application is housed in the `app` directory. By default, this directory is namespaced under `Theme` and `Plugin` and is autoloaded by Composer using the [PSR-4 autoloading standard](https://www.php-fig.org/psr/psr-4/).
 
 The app directory contains a `Providers` directory by default. This directory contains your application service providers such as the `EventServiceProvider` where your WordPress actions/filters can be declared, and the `RouteServiceProvider` where your REST and AJAX routes can be configured.
 
