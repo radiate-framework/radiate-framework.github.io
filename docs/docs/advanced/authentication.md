@@ -129,7 +129,6 @@ $user = new WP_User(1);
 
 $remember = true;
 
-// login is an alias for attempt
 if (Auth::login($user, $remember)) {
     //
 }
