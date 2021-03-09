@@ -99,7 +99,7 @@ Route::middleware('auth')->group(function () {
 
 ## Manually Authenticating Users
 
-It is possible to manually log in a user by passing the authentication credentials to the `attempt` or `login` method on the `Auth` facade.
+It is possible to manually log in a user by passing the authentication credentials to the `attempt` method on the `Auth` facade.
 
 ```php
 <?php
@@ -116,9 +116,21 @@ $remember = true;
 if (Auth::attempt($credentials, $remember)) {
     //
 }
+```
+
+You can also pass a `WP_User` instance to the `login` method:
+
+```php
+<?php
+
+use Radiate\Support\Facades\Auth;
+
+$user = new WP_User(1);
+
+$remember = true;
 
 // login is an alias for attempt
-if (Auth::login($credentials, $remember)) {
+if (Auth::login($user, $remember)) {
     //
 }
 ```
