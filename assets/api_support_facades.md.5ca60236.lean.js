@@ -1,1 +1,0 @@
-import{o as t,c as d,d as a}from"./app.0a5e4f59.js";const e='{"title":"Radiate\\\\Support\\\\Facades","description":"","frontmatter":{},"relativePath":"api/support/facades.md","lastUpdated":1614265604966}',r={},i=a('',4);r.render=function(a,e,r,o,c,s){return t(),d("div",null,[i])};export default r;export{e as __pageData};
