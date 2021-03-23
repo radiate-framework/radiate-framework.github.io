@@ -52,6 +52,10 @@ function getApiSidebar() {
     },
     //----------------------------------------------------------------------
     {
+      text: "Routing",
+      children: [{ text: "UrlGenerator", link: "/api/routing/url-generator" }],
+    },
+    {
       text: "Support",
       children: [
         { text: "Facades", link: "/api/support/facades" },
