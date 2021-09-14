@@ -130,6 +130,7 @@ a:hover {
 }
 
 a.header-anchor {
+  float: left;
   margin-left: -1.5ch;
   opacity: 0;
 }
