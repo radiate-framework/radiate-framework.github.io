@@ -5,10 +5,6 @@
 - [ArrayAccess](https://www.php.net/manual/en/class.arrayaccess.php)
 - [JsonSerializable](https://www.php.net/manual/en/class.jsonserializable.php)
 
-## Uses
-
-- [Radiate\Support\Traits\Macroable](/api/support/traits/macroable)
-
 ## Properties
 
 ### `$request`

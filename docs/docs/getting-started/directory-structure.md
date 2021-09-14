@@ -66,7 +66,7 @@ The Radiate `Theme` and `Plugin` both contain a few files in the root directory,
 
 - #### functions.php
 
-  The entry point for themes and plugins. This is where Radiate registers the [middleware](/docs/advanced/middleware) and [service providers](/docs/advanced/service-providers) before booting.
+  The entry point for themes and plugins. This is where Radiate registers the [middleware](/docs/advanced/middleware) and service providers before booting.
 
 - #### helpers.php
 

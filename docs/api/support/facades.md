@@ -1,6 +1,6 @@
 # Radiate\Support\Facades
 
-A `Facade` is a static interface to a class that is bound to the [service container](./service-container).
+A `Facade` is a static interface to a class that is bound to the service container.
 
 Radiate provides Facades to almost all of it's features for an elegant, fluid API.
 

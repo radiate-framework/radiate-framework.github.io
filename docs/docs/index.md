@@ -6,7 +6,7 @@ Radiate is a [WordPress](https://wordpress.org/) theme and plugin framework desi
 
 Heavily inspired by [Laravel](https://laravel.com/), Radiate is a lightweight framework with fluent APIs for working with WordPress in an object-oriented way.
 
-Radiate makes use of a [service container](/docs/advanced/container) to manage the application's services, [inject dependencies](/docs/advanced/dependency-injection) into your classes, [register services](/docs/advanced/service-providers) and [vendor packages](/docs/advanced/vendor-packages) and resolve the app [middleware](/docs/advanced/middleware).
+Radiate makes use of a service container to manage the application's services, inject dependencies into your classes, register services and vendor packages and resolve the app [middleware](/docs/advanced/middleware).
 
 Radiate also comes with a command-line interface built around [`wp-cli`](https://wp-cli.org/) to make scaffolding your project fast.
 
