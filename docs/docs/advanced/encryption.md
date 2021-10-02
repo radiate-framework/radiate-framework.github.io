@@ -46,10 +46,12 @@ You can also generate a key with `generateKey`:
 
 ```php
 Crypt::generateKey('AES-256-CBC');
+
 ```
 
 ...and get the key with `getKey`:
 
 ```php
 $key = Crypt::getKey();
+
 ```

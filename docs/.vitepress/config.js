@@ -114,6 +114,7 @@ function getDocsSidebar() {
         { text: "Authentication", link: "/docs/advanced/authentication" },
         { text: "Caching", link: "/docs/advanced/caching" },
         { text: "Controllers", link: "/docs/advanced/controllers" },
+        { text: "Encryption", link: "/docs/advanced/encryption" },
         { text: "Events", link: "/docs/advanced/events" },
         { text: "HTTP Client", link: "/docs/advanced/http-client" },
         { text: "Middleware", link: "/docs/advanced/middleware" },
