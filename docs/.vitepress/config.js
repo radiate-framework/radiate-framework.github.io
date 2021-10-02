@@ -112,6 +112,7 @@ function getDocsSidebar() {
       text: "Advanced",
       children: [
         { text: "Authentication", link: "/docs/advanced/authentication" },
+        { text: "Caching", link: "/docs/advanced/caching" },
         { text: "Controllers", link: "/docs/advanced/controllers" },
         { text: "Events", link: "/docs/advanced/events" },
         { text: "HTTP Client", link: "/docs/advanced/http-client" },
